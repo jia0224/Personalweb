@@ -1,0 +1,390 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #FEFFF0;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+header a{
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #BAE6FF;
+}
+
+/* About Section */
+.intro {
+    width: 100%;    
+    min-width: 150px; 
+    max-width: 1090px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px; 
+    max-width: 60%; 
+    flex-grow: 1.5;
+}
+
+.rightside img {
+    width: 80px; /* 調整圖片大小 */
+    height: auto;
+}
+
+.rightside h2 {
+    font-size: 3em;
+    margin: 0;
+}
+.rightside h2.h2-name{
+    width: 100%;
+    text-align: center;
+    background: url('img/low.png')no-repeat center;
+    background-size: 180px ;
+}
+.rightside p {
+    margin: 0;
+    color: #333;
+}
+
+.rightside button {
+    background-color: #BAE6FF;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 92px; /* 圓角 */
+    font-weight: bold;
+    border: 4px solid #333; /* 外框線 */
+}
+button:hover {
+    background-color: #80b5ee;
+}
+.intro img.main-image {
+    flex-grow: 1;
+    max-width: 40%;
+    border-radius: 8px;
+    margin-left: -30px;
+}
+
+.skills-section {
+    width: 100%;
+    max-width: 1090px;
+    margin: 10px auto;
+}
+
+.skills-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+.strengths-text {
+    margin-right: 10px; 
+    position: relative;
+    left: 120px; 
+}
+
+.smile-img {
+    position: relative;
+    top: 50px; 
+    left: 120px;
+}
+
+.skills-container {
+    display: flex;
+    margin-top: 50px;
+
+    
+}
+.skills-intro {
+    width: 25%; 
+    padding: 10px;
+    border-right: 2px solid #333; 
+    border-top: 2px solid #333; 
+}
+
+.skills-intro h3 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.skills-intro p {
+    color: #666;
+    font-size: 1.5em;
+}
+
+.skills-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 2px solid #333;
+}
+
+.skill-item {
+    padding: 20px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.skill-item h4 {
+    font-size: 1.3em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.skill-item p {
+    font-size: 0.9em;
+    margin: 0;
+    color: #666;
+}
+
+.skill-item a {
+    font-size: 1em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 2px solid #333;
+    padding-top: 5px;
+    margin-top: auto;
+    display: block;
+}
+
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    padding: 15px;
+    text-align: center;
+    background-image: url('img/potrfolio.png');
+    width: 536px;
+    height: 536px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.text-bt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: none;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: none;
+}
+
+.text-content h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    background: none;
+}
+
+.text-content p {
+    font-size: 1.5em;
+    color: #666;
+    background: none;
+}
+.p-button {
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+    background: none;
+}
+.p-button img {
+    width: 38px;
+    height: auto;
+}
+.contact {
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 750px;
+    background: none;
+}
+
+.overlay h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: none;
+}
+
+.overlay form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+}
+
+.overlay form label {
+    font-weight: bold;
+    align-self: flex-start;
+    
+}
+
+.overlay form input,
+.overlay form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    background: none;
+}
+
+.overlay form button {
+    background-color: #BAE6FF;
+    color: #333;
+    padding: 10px 20px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay form button:hover {
+    transform: scale(1.05);
+}
+
+.overlay form button:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+
+/* Footer */
+footer {
+    border-top: 5px solid #333;
+    padding-top: 10px;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+@media (max-width: 768px) {
+    .skills-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightside {
+        align-items: center;
+        text-align: center;
+    }
+}
