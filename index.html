@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estrella's Space</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -14,27 +15,32 @@
                 <li><a href="#about">關於我</a></li>
                 <li><a href="#skills">技能</a></li>
                 <li><a href="#portfolio">作品集</a></li>
-                <li><a href="#contact">聯絡我</a></li>
             </ul>
         </nav>
         
     </header>
-    <hr>
+    
     <section id="about" class="intro">
+        <img src="img/q.png" alt="cute" class="q">
         <div class="rightside">
-            <img src="img/q.png" alt="cute" class="q">
-            <h2>Hello, I'm</h2>
-            <h2 class="h2-name">Estrella</h2>
-            <p>Passionate about Code & Creativity!</p>
-            <button>About Me</button>
+            <h3>你好，我是</h3>
+            <h2>Estrella</h2>
+            <p>一個平凡無奇的研究生</p>
+            <button id="aboutBtn">關於我</button>
         </div>
         <img src="img/me.png" alt="me" class="main-image">  
     </section>
+    <section id="aboutDropdown" class="about">
+        <img src="" alt="">
+        <p>我是一名對技術充滿熱情的學生，專注於前端開發、遊戲製作與動畫設計。我致力於將創意和技術相結合，打造令人驚艷的作品。</p>
+        
+    </section>
 
-    <section class="skills-section">
-    <h2>Let me show you</h2>
-    <h2 class="smile">
-        <span class="strengths-text">my strengths</span>
+    <section id="skills" class="skills-section">
+    
+    <h2  class="smile">
+        <h2>讓我帶你一覽</h2>
+        <span class="strengths-text">我的專長</span>
         <img src="img/Smile.png" alt="smile" class="smile-img">
     </h2>
     <div class="skills-container">
@@ -47,25 +53,25 @@
                 <div class="icon"><img src="img/Skill-web.png" alt="web"></div>
                 <h4>前端開發</h4>
                 <p>Services we’re providing that derive 99% result</p>
-                <a href="#">Learn more</a>
+
             </div>
             <div class="skill-item">
                 <div class="icon"><img src="img/code.png" alt="#"></div>
                 <h4>程式設計</h4>
                 <p>Services we’re providing that derive 99% result</p>
-                <a href="#">Learn more</a>
+                
             </div>
             <div class="skill-item">
                 <div class="icon"><img src="img/game.png" alt="game"></div>
                 <h4>遊戲製作</h4>
                 <p>Services we’re providing that derive 99% result</p>
-                <a href="#">Learn more</a>
+                
             </div>
             <div class="skill-item">
                 <div class="icon"><img src="img/move.png" alt="move"></div>
                 <h4>動畫製作</h4>
                 <p>Services we’re providing that derive 99% result</p>
-                <a href="#">Learn more</a>
+                
             </div>
         </div>
         </div>
@@ -74,15 +80,15 @@
     <section id="portfolio" class="portfolio">
         <h2>My Portfolio</h2>
         <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="img/app.png" alt="宜蘭舊好玩">
+            <div class="portfolio-item" >
+                <img src="img/app.png" alt="宜蘭舊好玩" onclick="showDescription('description1')">
                 <div class="text-bt">
                     <div class="text-content">
                         <h3>宜蘭舊好玩</h3>
                         <p>APP - Virtual Reality</p>
                         <p># Unity</p>
                     </div>
-                    <a href="#" class="p-button"><img src="img/bt.png" alt="bt"></a>
+                    <img src="img/bt.png" alt="bt" >
                 </div>
             </div>            
     
@@ -122,34 +128,27 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    
-    
-    <section id="contact" class="contact">
-        <div class="image-container">
-            <img src="img/content.png" alt="contact background">
-            <div class="overlay">
-                <h2>Contact Me</h2>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Please Enter your name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Please Enter your Email" required>
-                    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Please Enter your Message" required></textarea>
-                    
-                    <button type="submit">Send message</button>
-                </form>
+            <!-- 說明欄 -->
+    <div class="description-overlay" id="descriptionOverlay">
+        <div class="description-content" id="descriptionContent">
+            <span class="close-btn" onclick="hideDescription()">✖</span>
+            <div id="description1" class="description-item">
+                <h3>宜蘭舊好玩</h3>
+                <p>這是一款使用虛擬實境技術打造的旅遊導覽 APP，讓使用者身臨其境地體驗宜蘭的美景。</p>
+            </div>
+            <div id="description2" class="description-item">
+                <h3>Metaassets 宣傳影片</h3>
+                <p>使用 Blender 製作的宣傳影片，展現產品的功能與優勢，視覺效果生動而吸引人。</p>
             </div>
         </div>
+    </div>
     </section>
+
     
     
     <footer>
         <p>© 2024 Estrella</p>
     </footer>
+    s<script src="script.js"></script>
 </body>
 </html>
